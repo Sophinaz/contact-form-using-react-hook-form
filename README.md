@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+<h1>Description</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a contact form page that was built using react hook form
 
-Currently, two official plugins are available:
+The page initialy looks like this:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot (147)](https://github.com/user-attachments/assets/49fdcb6a-4fd2-4fb3-9520-a3217531a350)
 
-## Expanding the ESLint configuration
+If nothing was given to the inputs, it would show error messages like this.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Screenshot (148)](https://github.com/user-attachments/assets/631e7f17-5d12-4aea-b193-2ce809e0fa87)
 
-- Configure the top-level `parserOptions` property like this:
+If the given email address is not in the right format, it would show an error message like this.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+![Screenshot (149)](https://github.com/user-attachments/assets/15193eec-5bb7-4198-9213-408af1984473)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+![Screenshot (150)](https://github.com/user-attachments/assets/c014742a-20f4-4042-b67d-610433c29428)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+If all the given inputs are valid, it wouldnt show any errors.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![Screenshot (151)](https://github.com/user-attachments/assets/97e4fd9a-5e8f-4cde-b26b-c91fa8624e07)
+
+Using the devtool for managing the states.
+
+![Screenshot (152)](https://github.com/user-attachments/assets/5b8cab2c-49dc-434c-9035-95c0ae5a9995)
+
