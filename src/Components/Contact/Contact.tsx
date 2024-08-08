@@ -2,6 +2,11 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import './Contact.css'
 import {DevTool} from '@hookform/devtools'
+import first from '../../../Images/person.jpg'
+import second from '../../../Images/mail.jpg'
+import third from '../../../Images/message.jpg'
+import font from '../../../Images/font1.png'
+import fourth from '../../../Images/fourth.jpg'
 
 type Formtype = {
     name: string
@@ -26,41 +31,47 @@ const Contact = () => {
         
 
         <form action="" onSubmit={handleSubmit(onSubmit)} noValidate>
+            <div className='newone'>
             <h1>Contact Form</h1>
             <div className='space'>
-                <label htmlFor="name"><h3>Name:</h3></label>
-                <input type="text"  id="name" {
+                <img src={fourth} className='icon'  alt="" />
+
+                <input className='A' placeholder='Your name' type="text"  id="name" {
                     ...register("name",
-                    {required: "Name is required"})
+                    {required: "Name is required."})
                 }/>
+
             </div>
             <p className='error'>{errors.name?.message}</p>
 
             <div className='space'>
-                <label htmlFor="email"><h3>Email:</h3></label>
-                <input type="text" id="email" {...register("email", 
+                <img src={second} className='icon'  alt="" />
+                <input className='A' type="text" id="email" placeholder='Your email' {...register("email", 
                     {required: "Email is required",
                     pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: "Invalid email format"
+                        message: "Invalid email format."
                     }
                     }
                 )}/>
+
             </div>
             <p className='error'>{errors.email?.message}</p>
 
-            <div className='space'>
-                <label htmlFor="message"> <h3>Message:</h3></label>
-                <input type="text" id="message" {...register("message", 
-                    {required: "Message is required"}
+            <div className='space1'>
+                <img src={third} className='icon1'  alt="" />
+                <input className='B' type="text" placeholder='Message you want to send' id="message" {...register("message", 
+                    {required: "Message is required."}
                 )}/>
             </div>
+
             <p className='error'>{errors.message?.message}</p>
 
             <div className='spacex'>
                 <button onClick={handleSubmit(onSubmit)} >Submit</button>
-            </div>
+            </div></div>
 
+        <img src={font} className='image' alt="" />
         </form>
         <DevTool control={control} />
     </div>
