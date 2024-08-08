@@ -4,23 +4,29 @@ This is a contact form page that was built using react hook form
 
 The page initialy looks like this:
 
-![Screenshot (147)](https://github.com/user-attachments/assets/49fdcb6a-4fd2-4fb3-9520-a3217531a350)
+![Screenshot (153)](https://github.com/user-attachments/assets/83b0f856-fa69-41a5-9b75-3e829a2876bb)
+
 
 If nothing was given to the inputs, it would show error messages like this.
 
-![Screenshot (148)](https://github.com/user-attachments/assets/631e7f17-5d12-4aea-b193-2ce809e0fa87)
+![Screenshot (154)](https://github.com/user-attachments/assets/7c1af6cd-426f-4705-a28f-a5c8e3213e8e)
+
 
 If the given email address is not in the right format, it would show an error message like this.
 
-![Screenshot (149)](https://github.com/user-attachments/assets/15193eec-5bb7-4198-9213-408af1984473)
+![Screenshot (155)](https://github.com/user-attachments/assets/5b3796d9-4526-4c70-96a4-2331f732e6a9)
 
-![Screenshot (150)](https://github.com/user-attachments/assets/c014742a-20f4-4042-b67d-610433c29428)
+
+![Screenshot (156)](https://github.com/user-attachments/assets/897ad956-2745-478f-b209-d204c9af791b)
+
 
 If all the given inputs are valid, it wouldnt show any errors.
 
-![Screenshot (151)](https://github.com/user-attachments/assets/97e4fd9a-5e8f-4cde-b26b-c91fa8624e07)
+![Screenshot (157)](https://github.com/user-attachments/assets/572644df-bfe1-431b-ace5-884aefd52260)
+
 
 Using the devtool for managing the states.
 
-![Screenshot (152)](https://github.com/user-attachments/assets/5b8cab2c-49dc-434c-9035-95c0ae5a9995)
+![Screenshot (158)](https://github.com/user-attachments/assets/917bed47-f3c2-497e-9f05-169446206115)
+
 
