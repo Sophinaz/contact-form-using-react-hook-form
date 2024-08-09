@@ -1,5 +1,5 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import React, { useState } from 'react'
+import { set, useForm } from 'react-hook-form'
 import './Contact.css'
 import {DevTool} from '@hookform/devtools'
 import second from '../../../Images/mail.jpg'
@@ -19,10 +19,10 @@ const Contact = () => {
     const form = useForm<Formtype>()
     const { register, control, handleSubmit, formState } = form
     const { errors } = formState;
-    
+    const [success, setSuccess] = useState(false)
 
     const onSubmit = (data: Formtype) => {
-        console.log(data)
+        setSuccess(true)
     }
   
     return (
@@ -68,7 +68,12 @@ const Contact = () => {
 
             <div className='spacex'>
                 <button onClick={handleSubmit(onSubmit)} >Submit</button>
-            </div></div>
+            </div>
+            {success ? (
+                <p className='success'>Form submitted successfully!</p>
+            ) : null}
+
+            </div>
 
         <img src={font} className='image' alt="" />
         </form>

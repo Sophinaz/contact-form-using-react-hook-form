@@ -96,3 +96,9 @@ h1{
     height: 20em;
     margin-top: 6em;
 }
+.success{
+    margin-top: 1.6em;
+    margin-left: 1.3em;
+    font-weight: bold;
+    color:#1d5e20;
+}
