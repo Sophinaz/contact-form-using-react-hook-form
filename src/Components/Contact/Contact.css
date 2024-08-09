@@ -21,12 +21,21 @@
     justify-content: center;
     margin-top: 2em;
 }
-button{
-    padding: 0.6em;
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer; 
     border-radius: 0.8em;
-    background-color: #e2e0e0;
-    color: black;
+    box-shadow: 0 0.2em #999; 
 }
+
+button:hover {
+    background-color: #1d5e20; 
+}
+
 form{
     width: 50%;
     background-color: white;
